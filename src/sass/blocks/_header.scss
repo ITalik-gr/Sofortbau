@@ -1,6 +1,9 @@
 
 .header {
   background-image: url(../img/header-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
   height: 800px;
   display: flex;
   justify-content: center;
