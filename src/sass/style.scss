@@ -6,14 +6,33 @@
     font-family: 'Sora', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
 }
 ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
+.color {
+    &-black {
+        color: #3A3E46;
+    }
+    &-1 {
+        color: #FED053;
+    }
+    &-2 {
+        color: #F4B301;
+    }
+    &-3 {
+        color: #F4A202;
+    }
+}
 
 @import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/work';
 @import 'blocks/apps';
+@import 'blocks/goal';
+@import 'blocks/time';
+@import 'blocks/start';
+@import 'blocks/footer';
