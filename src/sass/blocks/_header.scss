@@ -1,4 +1,65 @@
 
+.nav {
+  background: #3A3E46;
+  height: 60px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+      margin-right: 130px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    } 
+    &__link {
+      font-size: 13px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.imp-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: url(../img/imp-header__bg.jpg);
+  height: 500px;
+  &__title {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 130%;
+    color: #FFF;
+    width: 100%;
+  }
+}
+.dat-header {
+  background: url(../img/dat-header.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  &__title {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 130%;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+  }
+}
 .header {
   background-image: url(../img/header-image.jpg);
   background-repeat: no-repeat;
@@ -9,29 +70,45 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  &__logo {
-    width: 732px;
-    height: 300px;
-    background: #FFFFFF;
+  position: relative;
+  &__wrap {
     display: flex;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+  }
+  &__logo {
+    margin-bottom: 22px;
+  }
+  &__title-text {
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 130%;
+    color: #FFFFFF;
+    width: 552px;
+    .color-2 {
+      font-weight: bold;
+    }
   }
   &__text {
-    font-size: 31px;
-    line-height: 39px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    width: 636px;
-    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 34px;
+    line-height: 43px;
+    color: #3A3E46;
+    width: 614px;
+    height: 300px;
     background: #F4A202;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     &__title {
-      width: 395px;
+      width: 440px;
 
     }
   }

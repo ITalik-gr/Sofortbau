@@ -13,6 +13,13 @@ ul {
     padding: 0;
     list-style-type: none;
 }
+button {
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+}
 .color {
     &-black {
         color: #3A3E46;
@@ -24,10 +31,20 @@ ul {
         color: #F4B301;
     }
     &-3 {
-        color: #F4A202;
+        color: #F4A202!important;
     }
 }
-
+.color-bg {
+    &-1 {
+        background-color: #FED053;
+    }
+    &-2 {
+        background-color: #F4B301;
+    }
+    &-3 {
+        background-color: #F4A202!important;
+    }
+}
 @import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/work';
@@ -36,3 +53,8 @@ ul {
 @import 'blocks/time';
 @import 'blocks/start';
 @import 'blocks/footer';
+@import 'blocks/contact';
+@import 'blocks/down-menu';
+@import 'blocks/imp-contact';
+@import 'blocks/dat-text';
+@import 'blocks/dat-rules';

@@ -1,8 +1,18 @@
 
 .menu {
   background: #FBCE52;
+  position: relative;
   &__wrap {
     padding: 114px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__image {
+    margin-bottom: -340px;
+    img {
+
+    }
   }
   &__list {
     &__num {
@@ -19,16 +29,13 @@
     }
     &__link {
       font-weight: bold;
-      font-size: 86px;
+      font-size: 74px;
       line-height: 147.6%;
       color: #FFFFFF;
 
       &:hover {
         color: white;
         text-decoration: none;
-      }
-      span {
-        color: #1D2228;
       }
     }
   }

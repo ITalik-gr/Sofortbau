@@ -1,0 +1,73 @@
+
+.imp-contact {
+  position: relative;
+  height: 720px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__adress {
+    height: 720px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__title {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 130%;
+      color: #000000;
+      
+    }
+    &__subtitle {
+      margin-top: 47px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      color: #000000;
+    }
+  }
+  &__com {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #FED053;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+    }
+    &__link {
+      display: flex;
+      justify-content: space-between;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 130%;
+      color: #000000;
+      margin-bottom: 58px;
+      &:hover {
+        color: #000;
+        text-decoration: none;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        width: 35px;
+        margin-right: 35px;
+        display: flex;
+        justify-content: center;
+        img {
+
+        }
+      }
+    }
+  }
+}
