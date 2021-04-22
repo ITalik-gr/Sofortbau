@@ -1,7 +1,83 @@
 
+
 .nav {
   background: #3A3E46;
   height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  &-burger {
+    width: 24px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+    &:before {
+      height: 2px;
+      width: 100%;
+      background: #fff;
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+    }
+    span {
+      height: 2px;
+      width: 100%;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+    &:after {
+      height: 2px;
+      width: 100%;
+      background: #fff;
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__hr {
+    border: 1px solid #FED053;
+    width: 90%;
+    margin: 25px 35px 25px 35px;
+  }
+  &-menu {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    z-index: 10;
+    margin-top: -1px;
+    padding: 5px 0px 0px 0px;
+    background: #3A3E46;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 335px;
+    width: 100%;
+    &__list {
+      padding-left: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      &__item {
+        margin-bottom: 25px;
+        a {
+          font-size: 13px;
+          line-height: 16px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
   &__wrap {
     display: flex;
     justify-content: space-between;
@@ -12,6 +88,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 60px;
     &__item {
       margin-right: 130px;
       &:last-child {
@@ -32,10 +109,14 @@
 }
 
 .imp-header {
+  padding-top: 60px;
   display: flex;
   align-items: center;
   text-align: center;
-  background: url(../img/imp-header__bg.jpg);
+  background: url(../img/imp-header__bg.webp);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
   height: 500px;
   &__title {
     font-weight: 600;
@@ -46,7 +127,8 @@
   }
 }
 .dat-header {
-  background: url(../img/dat-header.jpg);
+  padding-top: 60px;
+  background: url(../img/dat-header.webp);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +143,8 @@
   }
 }
 .header {
-  background-image: url(../img/header-image.jpg);
+  padding-top: 60px;
+  background-image: url(../img/header-image.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;

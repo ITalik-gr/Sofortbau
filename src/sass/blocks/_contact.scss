@@ -3,7 +3,10 @@
 
 .contact {
   padding: 165px 0px;
-  background: url(../img/contact-bg.jpg);
+  background: url(../img/contact-bg.webp);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
   &__wrap {
     display: flex;
     justify-content: space-between;

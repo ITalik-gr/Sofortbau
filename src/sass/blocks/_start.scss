@@ -30,6 +30,8 @@
   }
   &__input { // form
     position: relative;
+    display: flex;
+    justify-content: center;
     input::placeholder {
       color: #FFFFFF;
     }
@@ -50,7 +52,7 @@
     &__btn { // button input
       outline: none;
       position: absolute;
-      right: 0px;
+      right: 90px;
       top: -27px;
       width: 168px;
       height: 50px;
