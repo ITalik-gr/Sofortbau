@@ -48,6 +48,9 @@ button {
 .nav-open{
     display: flex;
 }
+.nav-menu-active {
+    display: flex!important;
+}
 @import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/work';

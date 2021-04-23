@@ -44,8 +44,9 @@
                 <div class="nav__logo">
                     <img src="img/nav-logo.svg" alt="">
                 </div>
-                <ul class="nav__list">
-                    <li class="nav__list__item"><a href="#footer" class="nav__list__link">Service</a></li>
+                <ul id="nav" onclick="event.preventDefault()" class="nav__list">
+                    <li class="nav__list__item">
+                        <a href="#footer" onclick="scrollMenu('#footer')"  class="nav__list__link scrollto">Service</a></li>
                     <li class="nav__list__item"><a href="#" class="nav__list__link">pricing</a></li>
                     <li class="nav__list__item"><a href="#" class="nav__list__link">vorteile</a></li>
                     <li class="nav__list__item"><a href="#" class="nav__list__link">contact us</a></li>
@@ -55,7 +56,7 @@
                 </div>
             </div>
         </div>
-        <div class="nav-menu">
+        <div id="nav-list" class="nav-menu">
             <ul class="nav-menu__list">
                 <li class="nav-menu__list__item"><a href="#footer">Service</a></li>
                 <li class="nav-menu__list__item"><a href="#">pricing</a></li>
@@ -350,7 +351,7 @@
 
 
     <!-- JavaScript files -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script> -->
     <script src="js/script.js"></script>
 </body>
 </html>

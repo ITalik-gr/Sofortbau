@@ -75,6 +75,11 @@
     align-items: start;
     height: 370px;
     width: 100%;
+    // margin-top: -200vh;
+    &-active {
+      display: flex!important;
+      // margin-top: 0!important;
+    }
     &__list {
       padding-left: 35px;
       display: flex;
