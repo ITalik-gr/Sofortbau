@@ -45,30 +45,31 @@
                     <img src="img/nav-logo.svg" alt="">
                 </div>
                 <ul class="nav__list">
-                    <li class="nav__list__item"><a href="#" class="nav__list__link">Service</a></li>
+                    <li class="nav__list__item"><a href="#footer" class="nav__list__link">Service</a></li>
                     <li class="nav__list__item"><a href="#" class="nav__list__link">pricing</a></li>
                     <li class="nav__list__item"><a href="#" class="nav__list__link">vorteile</a></li>
                     <li class="nav__list__item"><a href="#" class="nav__list__link">contact us</a></li>
                 </ul>
-                <div class="nav-burger">
+                <div id="nav-menu" class="nav-burger">
                     <span></span>
                 </div>
             </div>
         </div>
+        <div class="nav-menu">
+            <ul class="nav-menu__list">
+                <li class="nav-menu__list__item"><a href="#footer">Service</a></li>
+                <li class="nav-menu__list__item"><a href="#">pricing</a></li>
+                <li class="nav-menu__list__item"><a href="#">vorteile</a></li>
+                <li class="nav-menu__list__item"><a href="#">contact us</a></li>
+            </ul>
+            <hr class="nav__hr">
+            <ul class="nav-menu__list">
+                <li class="nav-menu__list__item"><a href="impressum.html">Impressum</a></li>
+                <li class="nav-menu__list__item"><a href="Datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="nav-menu">
-        <ul class="nav-menu__list">
-            <li class="nav-menu__list__item"><a href="#">Service</a></li>
-            <li class="nav-menu__list__item"><a href="#">pricing</a></li>
-            <li class="nav-menu__list__item"><a href="#">vorteile</a></li>
-            <li class="nav-menu__list__item"><a href="#">contact us</a></li>
-        </ul>
-        <hr class="nav__hr">
-        <ul class="nav-menu__list">
-            <li class="nav-menu__list__item"><a href="impressum.html">Impressum</a></li>
-            <li class="nav-menu__list__item"><a href="Datenschutz.html">Datenschutz</a></li>
-        </ul>
-    </div>
+
     <div class="header">
         <div class="container">
             <div class="header__wrap">
@@ -270,7 +271,7 @@
             </div>
         </div>
     </div>
-    <div class="footer">
+    <div id="footer" class="footer">
             <div class="footer__wrap">
                 <div class="footer__text">
                     <div class="footer__title">
@@ -349,6 +350,7 @@
 
 
     <!-- JavaScript files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

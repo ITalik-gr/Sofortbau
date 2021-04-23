@@ -976,6 +976,11 @@
 
 
 @media (max-width: 576px)  { //320
+  .nav {
+    &__hr {
+      width: 80%;
+    }
+  }
   .header {
     background-position: -720px 0;
     &__logo {

@@ -45,6 +45,9 @@ button {
         background-color: #F4A202!important;
     }
 }
+.nav-open{
+    display: flex;
+}
 @import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/work';
