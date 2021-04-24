@@ -3,7 +3,7 @@
 
 .contact {
   padding: 165px 0px;
-  background: url(../img/contact-bg.webp);
+  background: url(../img/contact-bg.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -37,6 +37,7 @@
       font-size: 35px;
       line-height: 130%;
       color: #FFFFFF;
+      margin-bottom: 15px;
     }
     &__subtitle {
       font-family: 'Open Sans', sans-serif;
@@ -54,6 +55,8 @@
     align-items: flex-end;
     margin-top: 40px;
     input {
+      background: #F4A202;
+      font-family: 'Open Sans', sans-serif;
       font-weight: normal;
       font-size: 16px;
       line-height: 25px;

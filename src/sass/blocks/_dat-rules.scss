@@ -17,13 +17,16 @@
 
   }
   &__descr {
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 160%;
     color: #000000;
+    p {
+      font-family: 'Open Sans', sans-serif;
+    }
     a {
+      font-family: 'Open Sans', sans-serif;
       color: #000000;
       transition: .3s all;
       word-wrap: break-word;
@@ -52,6 +55,7 @@
       position: relative;
       margin-left: 15px;
       padding-left: 30px;
+      font-family: 'Open Sans', sans-serif;
       a {
         color: #000000;
         transition: .3s all;

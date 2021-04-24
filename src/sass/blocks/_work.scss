@@ -19,7 +19,7 @@
     }
   }
   &-card {
-    width: 280px;
+    width: 310px;
     max-height: 390px;
     display: flex;
     flex-direction: column;
@@ -30,6 +30,13 @@
       position: relative;
       width: 150px;
       height: 126px;
+      &-line {
+          position: absolute;
+          left: -147%;
+          z-index: 4;
+          top: 30%;
+          transform: translateY(-50%);
+        }
       &-icons {
         position: absolute;
         z-index: 99;
@@ -69,6 +76,7 @@
       color: #1D2228;
       p {
         max-width: 290px;
+        font-family: 'Open Sans', sans-serif;
       }
     }
   }
