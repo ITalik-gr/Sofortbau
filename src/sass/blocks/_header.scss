@@ -163,7 +163,7 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
-  background: url(../img/imp-header__bg.jpg);
+  background: url(../../img/bg/imp-header__bg.webp);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -178,7 +178,10 @@ a {
 }
 .dat-header {
   padding-top: 60px;
-  background: url(../img/dat-header.webp);
+  background: url(../../img/bg/dat-header.webp);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,7 +207,7 @@ a {
 }
 .header { //section
   padding-top: 60px;
-  background-image: url(../img/header-image.jpg);
+  background-image: url(../img/bg/header-image.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
