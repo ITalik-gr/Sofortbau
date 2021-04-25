@@ -64,41 +64,48 @@
             </div>
         </div>
         <div id="nav-list" class="nav-menu">
-            <ul class="nav-menu__list">
-                <li class="nav-menu__list__item"><a href="#footer">Service</a></li>
-                <li class="nav-menu__list__item"><a href="#">pricing</a></li>
-                <li class="nav-menu__list__item"><a href="#">vorteile</a></li>
-                <li class="nav-menu__list__item"><a href="#">contact us</a></li>
-            </ul>
-            <hr class="nav__hr">
-            <ul class="nav-menu__list">
-                <li class="nav-menu__list__item"><a href="impressum.html">Impressum</a></li>
-                <li class="nav-menu__list__item"><a href="Datenschutz.html">Datenschutz</a></li>
-            </ul>
+            <div class="container">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__list__item"><a href="#footer">Service</a></li>
+                    <li class="nav-menu__list__item"><a href="#">pricing</a></li>
+                    <li class="nav-menu__list__item"><a href="#">vorteile</a></li>
+                    <li class="nav-menu__list__item"><a href="#">contact us</a></li>
+                </ul>
+                <hr class="nav__hr">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__list__item"><a href="impressum.html">Impressum</a></li>
+                    <li class="nav-menu__list__item"><a href="Datenschutz.html">Datenschutz</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="header">
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="header__wrap">
-                <div class="header__title">
-                    <div class="header__logo">
-                        <picture>
-                           <a href="#"><img src="img/Logo.svg" alt=""></a> 
-                        </picture>
-                    </div>
-                    <div class="header__title-text">
-                        Der Lieferdienst für die <span class="color-2">Bauwirtschaft</span>. 
+                <div class="container">
+                    <div class="header__body">
+                        <div class="header__title">
+                            <div class="header__logo">
+                                <picture>
+                                   <a href="#"><img src="img/Logo.svg" alt=""></a> 
+                                </picture>
+                            </div>
+                            <div class="header__title-text">
+                                Der Lieferdienst für die <span class="color-2">Bauwirtschaft</span>. 
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
                 <div class="header__text">
                     <div class="header__text__title">
                         <b>2h Expresslieferung von Baustoffen zur Baustelle.</b><br>
                         Bald in Berlin.
                     </div>
             </div>
-        </div>
-        </div>
+
+        <!-- </div> -->
     </div>
 
     <div class="menu">
@@ -155,12 +162,13 @@
                     <div class="work-card__image">
                         <picture>
                             <img class="work-card__image-icons" src="img/car.svg" alt="">
-                            <img class="work-card__image-line" src="img/Line.svg" alt="">
+                            <picture>
+                                <source srcset="img/Line2.svg" media="(max-width: 768px)">
+                                <img class="work-card__image-line" src="img/Line.svg" alt="">
+                                </picture>
                         </picture>
-                        <span><picture>
-                            <source srcset="img/Line2.svg" media="(max-width: 768px)">
-                            <!-- <img src="img/Line.svg" alt=""> -->
-                        </picture></span>
+                        <span>
+                        </span>
                     </div>
                     <div class="work-card__title">
                         Lieferung von  Baustoffen innerhalb  von 2  Stdn. oder nach Termin 
@@ -173,12 +181,15 @@
                 </div>
                 <div class="work-card">
                     <div class="work-card__image">
-                        <picture><img  class="work-card__image-icons" src="img/mail.svg" alt="">
-                            <img class="work-card__image-line" src="img/Line.svg" alt=""></picture>
-                        <span><picture>
-                            <source srcset="img/Line2.svg" media="(max-width: 768px)">
-                            <!-- <img src="img/Line.svg" alt=""> -->
-                        </picture></span>
+                        <picture>
+                            <img  class="work-card__image-icons" src="img/mail.svg" alt="">
+                            <picture>
+                                <source srcset="img/Line2.svg" media="(max-width: 768px)">
+                                <img class="work-card__image-line" src="img/Line.svg" alt="">
+                                </picture>
+                        </picture>
+                        <span>
+                    </span>
                     </div>
                     <div class="work-card__title">
                         Preise wie beim Fachhändler
@@ -247,7 +258,7 @@
         </div>
     </div>
 
-    <div class="time">
+    <div class="time"> 
                     <div class="time__text">
                         <div class="container">
                             <div class="time__body">
@@ -264,8 +275,12 @@
                         </div>
                     </div>
                     <div class="time__image">
-                        <picture><img src="img/time-image.jpg" alt=""></picture>
-                    </div>
+                        <picture>
+                           <img src="" srcset="img/time-image.webp, img/time-image@2.webp 2x, img/time-image@2.webp 3x" alt="">
+                        </picture>
+                        <img src="img/time-image.jpg" srcset="img/time-image@2.jpg 2ч, img/time-image@2.jpg 2x" alt="">
+                     </div>
+               
                 
 
     </div>

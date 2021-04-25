@@ -19,3 +19,17 @@ var scrollMenu = anim(2000)
 //* burger
 
 
+var trigger = document.getElementById('nav-menu');
+
+trigger.addEventListener('click', function() {
+  trigger.classList.toggle('opened');
+});
+
+//* menu
+
+var toggle = document.getElementById('nav-menu');
+var block = document.getElementById('nav-list');
+
+toggle.addEventListener('click', function() {
+  block.classList.toggle('nav-menu-active');
+})
