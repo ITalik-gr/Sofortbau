@@ -1,4 +1,32 @@
 
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-moz-min-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) { 
+ /* стили для дисплеев типа Retina */
+ .contact {
+  background: url(../img/bg/contact_bg.webp);
+ }
+ .imp-header {
+  background: url(../../img/bg/imp-header__bg.webp);
+ }
+ .dat-header {
+  background: url(../../img/bg/dat-header.webp);
+ }
+ .header {
+  background-image: url(../img/bg/header-image.webp);
+ }
+ .apps {
+  background:url(../img/bg/apps-image.webp);
+ }
+}
+
+
 @media (max-width: 1400px) { //1200
   .footer {
     justify-content: space-around;
