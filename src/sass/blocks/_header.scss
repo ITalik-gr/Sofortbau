@@ -43,7 +43,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 100;
   width: 100%;
   &-burger {
     width: 24px;
@@ -80,7 +80,8 @@
     }
   }
   &__hr {
-    border: 1px solid #FED053;
+    border: none;
+    border-bottom: 1px solid #fed053;
     margin: 5px 0px 25px 0px;
   }
   &-menu {
@@ -163,7 +164,7 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
-  background: url(../../img/bg/imp-header__bg-win.webp);
+  background: url(../img/bg/imp-header__bg-win.webp);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -178,7 +179,7 @@ a {
 }
 .dat-header {
   padding-top: 60px;
-  background: url(../../img/bg/dat-header-win.webp);
+  background: url(../img/bg/dat-header-win.webp);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -214,10 +215,6 @@ a {
   height: 800px;
   display: flex;
   align-items: flex-end;
-  // display: flex;
-  // justify-content: center;
-  // align-items: flex-start;
-  // flex-direction: column;
   position: relative;
   overflow: hidden;
   &__wrap { // time__text
@@ -255,6 +252,11 @@ a {
     align-items: center;
     display: flex;
     padding-left: 85px;
+    &-mob {
+      background: #F4B301;
+      padding-left: 85px;
+      display: none;
+    }
     &__title {
       width: 440px;
       font-size: 34px;

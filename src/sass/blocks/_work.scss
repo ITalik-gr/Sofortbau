@@ -25,6 +25,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    &__w {
+      width: 280px;
+    }
     &__image {
       margin-bottom: 22px;
       position: relative;
@@ -32,9 +35,9 @@
       height: 126px;
       &-line {
           position: absolute;
-          left: -147%;
+          left: -144%;
           z-index: 4;
-          top: 30%;
+          top: 34%;
           transform: translateY(-50%);
         }
       &-icons {

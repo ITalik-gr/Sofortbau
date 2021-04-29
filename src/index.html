@@ -63,23 +63,22 @@
                 </div>
             </div>
         </div>
-        <div id="nav-list" class="nav-menu">
-            <div class="container">
-                <ul class="nav-menu__list">
-                    <li class="nav-menu__list__item"><a href="#footer">Service</a></li>
-                    <li class="nav-menu__list__item"><a href="#">pricing</a></li>
-                    <li class="nav-menu__list__item"><a href="#">vorteile</a></li>
-                    <li class="nav-menu__list__item"><a href="#">contact us</a></li>
-                </ul>
-                <hr class="nav__hr">
-                <ul class="nav-menu__list">
-                    <li class="nav-menu__list__item"><a href="impressum.html">Impressum</a></li>
-                    <li class="nav-menu__list__item"><a href="Datenschutz.html">Datenschutz</a></li>
-                </ul>
-            </div>
+    </div>
+    <div id="nav-list" class="nav-menu">
+        <div class="container">
+            <ul class="nav-menu__list">
+                <li class="nav-menu__list__item"><a href="#footer">Service</a></li>
+                <li class="nav-menu__list__item"><a href="#">pricing</a></li>
+                <li class="nav-menu__list__item"><a href="#">vorteile</a></li>
+                <li class="nav-menu__list__item"><a href="#">contact us</a></li>
+            </ul>
+            <hr class="nav__hr">
+            <ul class="nav-menu__list">
+                <li class="nav-menu__list__item"><a href="impressum.html">Impressum</a></li>
+                <li class="nav-menu__list__item"><a href="Datenschutz.html">Datenschutz</a></li>
+            </ul>
         </div>
     </div>
-
     <div class="header">
         <!-- <div class="container"> -->
             <div class="header__wrap">
@@ -107,7 +106,12 @@
 
         <!-- </div> -->
     </div>
-
+    <div class="header__text-mob">
+        <div class="header__text__title">
+            <b>2h Expresslieferung von Baustoffen zur Baustelle.</b><br>
+            Bald in Berlin.
+        </div>
+    </div>
     <div class="menu">
         <div class="container">
             <div class="menu__wrap">
@@ -127,7 +131,12 @@
                 </ul>
                 <div class="menu__image">
                     <picture>
-                        <img src="img/iPhoneX.png" alt="">
+                        <source type="image/webp" srcset="img/iphone/iPhoneX.webp 1x, img/iphone/iPhoneX@2x.webp 2x, 
+                        img/iphone/iPhoneX@3x.webp 3x">
+
+                        <img src="img/iphone/iPhoneX.png"  srcset="img/iphone/iPhoneX@2x.png 2x,
+                        img/iphone/iPhoneX@3x.png 3x " alt="">
+
                     </picture>
                 </div>
             </div>
@@ -142,7 +151,7 @@
                 Mit Sofortbau.
             </div>
             <div class="work__wrap">
-                <div class="work-card">
+                <div class="work-card work-card__w">
                     <div class="work-card__image">
                         <picture>
                             <img class="work-card__image-icons" src="img/cart.svg" alt="">
@@ -287,10 +296,10 @@
                                     Vier <span class="color-1">Vorteile</span>, die Ihnen viel wertvolle <span class="color-3">Zeit</span> sparen.
                                 </div>
                                 <ul class="time__list">
-                                    <li><a href="#" class="time__list__link"> <span>01</span> Kein Suchen nach Baustoffen .</a></li>
-                                    <li><a href="#" class="time__list__link"> <span>02</span> Keine Zeit für Fahrten verschwenden</a></li>
-                                    <li><a href="#" class="time__list__link"> <span>03</span> Kein Transportfahrzeug nötig</a></li>
-                                    <li><a href="#" class="time__list__link"> <span>04</span> Keine komplizierten Bestellungen über Telefon, Mail oder Fax</a></li>
+                                    <li class="time__list__link"><span>01</span> Kein Suchen nach Baustoffen .</li>
+                                    <li class="time__list__link"><span>02</span> Keine Zeit für Fahrten verschwenden</li>
+                                    <li class="time__list__link"><span>03</span> Kein Transportfahrzeug nötig</li>
+                                    <li class="time__list__link"><span>04</span> Keine komplizierten Bestellungen über Telefon, Mail oder Fax</li>
                                 </ul>
                             </div>
                         </div>
@@ -350,7 +359,7 @@
                     <input placeholder="Telefon" required class="box__input footer__tell" type="number">
                 </div>
              <div class="footer__button">
-                <button class="box__button footer__btn">button</button>
+                <button class="box__button footer__btn">Absenden</button>
              </div>
             </form>
           </div>

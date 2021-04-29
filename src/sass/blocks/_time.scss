@@ -10,27 +10,21 @@
   }
 }
 .time { // section
-  // display: flex;
-  // justify-content: center;
-  // padding: 95px 0px 80px 0px;
-  height: 750px;
+  height: 830px;
   overflow: hidden;
   background: #3A3E46;
-  // position: relative;
   &__text { //section-content
     flex: 0 0 100%;
     display: flex;
   }
   &__image { // section image
-    // position: absolute;
-    // right: 0;
-    // top: 0;
     img {
-      width: 611px;
+      width: 675px;
+      position: relative;
     }
   }
   &__body { //section body
-    padding: 65px 15px 100px 0px;
+    padding: 90px 15px 120px 0px;
     width: 50%;
   }
   &__title {
