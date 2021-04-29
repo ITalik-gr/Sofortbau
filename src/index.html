@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,10 +53,20 @@
                 </div>
                 <ul id="nav" onclick="event.preventDefault()" class="nav__list">
                     <li class="nav__list__item">
-                        <a href="#footer" onclick="scrollMenu('#footer')"  class="nav__list__link scrollto">Service</a></li>
-                    <li class="nav__list__item"><a href="#" class="nav__list__link">pricing</a></li>
-                    <li class="nav__list__item"><a href="#" class="nav__list__link">vorteile</a></li>
-                    <li class="nav__list__item"><a href="#" class="nav__list__link">contact us</a></li>
+                        <a href="#service" 
+                        onclick="scrollMenu('#Service')"  
+                        class="nav__list__link scrollto">Service</a></li>
+                    <li class="nav__list__item"><a href="#pricing" 
+                        onclick="scrollMenu('#pricing')" 
+                        class="nav__list__link">pricing</a></li>
+
+                    <li class="nav__list__item"><a href="#vorteile" 
+                        onclick="scrollMenu('#vorteile')"
+                        class="nav__list__link">vorteile</a></li>
+
+                    <li class="nav__list__item"><a href="#contact-us" 
+                        onclick="scrollMenu('#contact-us')"
+                        class="nav__list__link">contact us</a></li>
                 </ul>
                 <div id="nav-menu" class="nav-burger">
                     <span></span>
@@ -107,9 +117,11 @@
         <!-- </div> -->
     </div>
     <div class="header__text-mob">
-        <div class="header__text__title">
-            <b>2h Expresslieferung von Baustoffen zur Baustelle.</b><br>
-            Bald in Berlin.
+        <div class="container">
+            <div class="header__text__title">
+                <b>2h Expresslieferung von Baustoffen zur Baustelle.</b><br>
+                Bald in Berlin.
+            </div>
         </div>
     </div>
     <div class="menu">
@@ -144,10 +156,10 @@
 
     </div>
 
-    <div class="work">
+    <div id="Service" class="work">
         <div class="container">
             <div class="work__title">
-                <span class="work__title__color">Just-In-Time.</span> 
+                <span class="work__title__color">Just-In-Time.</span> <br>
                 Mit Sofortbau.
             </div>
             <div class="work__wrap">
@@ -213,7 +225,7 @@
         </div>
     </div>
 
-    <div class="apps"> <!-- Oveflow -->
+    <div id="pricing" class="apps"> <!-- Oveflow -->
         <div class="container">
             <div class="apps-left">
                 <div class="apps__text">
@@ -231,7 +243,7 @@
         </div>
     </div>
 
-    <div class="goal">
+    <div id="vorteile" class="goal">
         <div class="container">
             <div class="goal__title">
                 Bei Sofortbau unterstützen wir alle <span class="color-1">Menschen</span>, die das <span class="color-2">Ökosystem</span> der <span class="color-3">Bauindustrie</span> ausmachen.
@@ -288,7 +300,7 @@
         </div>
     </div>
 
-    <div class="time"> 
+    <div id="contact-us" class="time"> 
                     <div class="time__text">
                         <div class="container">
                             <div class="time__body">
@@ -340,6 +352,16 @@
     </div>
 
     <div class="footer">
+        <div class="footer__image-mob">
+            <picture>
+                <source type="image/webp" srcset="img/footer/footer.webp 1x, img/footer/footer@2x.webp 2x, 
+                img/footer/footer@3x.webp 3x">
+
+                <img src="img/footer/footer.png"  srcset="img/footer/footer@2x.png 2x,
+                img/footer/footer@3x.png 3x " alt="">
+
+            </picture>
+        </div>
         <div class="container">
           <div class="box__item box__item--left">
             <div class="box__item-top">
@@ -373,6 +395,16 @@
 
             </picture>
           </div>
+        </div>
+        <div class="footer__image">
+            <picture>
+                <source type="image/webp" srcset="img/footer/footer.webp 1x, img/footer/footer@2x.webp 2x, 
+                img/footer/footer@3x.webp 3x">
+
+                <img src="img/footer/footer.png"  srcset="img/footer/footer@2x.png 2x,
+                img/footer/footer@3x.png 3x " alt="">
+
+            </picture>
         </div>
     </div>
    

@@ -1,64 +1,82 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sofortbau</title>
-    <meta name="title" content="Заголовок">
-    <meta name="description" content="Онисание">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sofortbau</title>
+  <meta name="title" content="Заголовок">
+  <meta name="description" content="Онисание">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="Заголовок">
-    <meta property="og:description" content="Онисание">
-    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-    <!-- Open Graph / Facebook -->
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://metatags.io/">
-    <meta property="twitter:title" content="Заголовок">
-    <meta property="twitter:description" content="Онисание">
-    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-    <!-- Twitter -->
-    <!-- Favicon  -->
-    <link  rel="shortcut icon"  href="icons/favicon.ico" type ="image/x-icon" > 
-    <link  rel="icon"  href="icons/favicon.ico" type="image/x-icon" >
-    <!-- Favicon  -->
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metatags.io/">
+  <meta property="og:title" content="Заголовок">
+  <meta property="og:description" content="Онисание">
+  <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+  <!-- Open Graph / Facebook -->
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://metatags.io/">
+  <meta property="twitter:title" content="Заголовок">
+  <meta property="twitter:description" content="Онисание">
+  <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+  <!-- Twitter -->
+  <!-- Favicon  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Favicon  -->
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="fonts/stylesheet.css">
-    <!-- Fonts -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-grid.min.css" integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg==" crossorigin="anonymous" />
-    <!-- Bootstrap -->
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.min.css">
-    <!-- Style -->
+  <!-- Fonts -->
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <!-- Fonts -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-grid.min.css" integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg==" crossorigin="anonymous" />
+  <!-- Bootstrap -->
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Style -->
 </head>
 <body>
-  
-  <body>
-    <div class="nav">
+  <div class="nav">
       <div class="container">
           <div class="nav__wrap">
               <div class="nav__logo">
                   <img src="img/nav-logo.svg" alt="">
               </div>
-              <ul class="nav__list">
-                  <li class="nav__list__item"><a href="#footer" class="nav__list__link">Service</a></li>
-                  <li class="nav__list__item"><a href="#" class="nav__list__link">pricing</a></li>
-                  <li class="nav__list__item"><a href="#" class="nav__list__link">vorteile</a></li>
-                  <li class="nav__list__item"><a href="#" class="nav__list__link">contact us</a></li>
+              <ul id="nav" onclick="event.preventDefault()" class="nav__list">
+                  <li class="nav__list__item">
+                      <a href="#service" 
+                      onclick="scrollMenu('#Service')"  
+                      class="nav__list__link scrollto">Service</a></li>
+                  <li class="nav__list__item"><a href="#pricing" 
+                      onclick="scrollMenu('#pricing')" 
+                      class="nav__list__link">pricing</a></li>
+
+                  <li class="nav__list__item"><a href="#vorteile" 
+                      onclick="scrollMenu('#vorteile')"
+                      class="nav__list__link">vorteile</a></li>
+
+                  <li class="nav__list__item"><a href="#contact-us" 
+                      onclick="scrollMenu('#contact-us')"
+                      class="nav__list__link">contact us</a></li>
               </ul>
               <div id="nav-menu" class="nav-burger">
                   <span></span>
               </div>
           </div>
       </div>
-      <div class="nav-menu">
+  </div>
+  <div id="nav-list" class="nav-menu">
+      <div class="container">
           <ul class="nav-menu__list">
               <li class="nav-menu__list__item"><a href="#footer">Service</a></li>
               <li class="nav-menu__list__item"><a href="#">pricing</a></li>
