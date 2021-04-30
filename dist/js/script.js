@@ -14,7 +14,7 @@ function anim(duration) {
       })
   }
 };
-var scrollMenu = anim(2000)
+var scrollMenu = anim(900) // Скорость прокрутки
 
 //* burger
 
