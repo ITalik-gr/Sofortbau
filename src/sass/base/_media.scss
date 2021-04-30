@@ -369,6 +369,7 @@
     }
   }
   .apps {
+    background-position: -160px 0px;
     &__wrap {
       width: 100%;
     }
@@ -619,6 +620,7 @@
     }
   }
   .apps {
+    background-position: -360px 0;
     &__title {
       font-size: 45px;
       line-height: 113%;
@@ -1325,6 +1327,9 @@
   }
 }
 @media (min-width: 2000px) {
+  .apps {
+    background-position: 0 -300px;
+  }
   .time {
     &__image {
       img {
