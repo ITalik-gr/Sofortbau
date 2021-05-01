@@ -535,7 +535,7 @@
   .header {
     justify-content: space-between;
     background-position: -500px 0;
-    background: url(../img/bg/header-image-win-mobile.png);
+    background: url(../img/bg/header-image-win-mobile.webp);
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
@@ -1119,7 +1119,7 @@
     &-header {
       background: url(../img/bg/imp-header-mob.webp);
       // background-position: -420px 0;
-      background-size: auto;
+      background-size: cover;
       height: 810px;
       &__title {
         font-size: 50px;
