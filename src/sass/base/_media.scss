@@ -879,7 +879,8 @@
     &__body {
       position: absolute;
       top: 80px;
-      left: 25px;
+      left: 0px;
+      padding: 0px 15px 45% 15px;
     }
     &__text {
       padding-bottom: 90%;
@@ -897,8 +898,8 @@
       }
     }
     &__body {
-      width: 85%;
-      padding-bottom: 45%;
+      width: 100%;
+      // padding-bottom: 45%;
     }
     &__title {
       &-text {
@@ -920,6 +921,7 @@
     &__wrap {
       padding-bottom: 200px;
       padding-top: 60px;
+      align-items: flex-start;
     }
     &__list {
       &__num {
@@ -932,7 +934,7 @@
     }
     &__image {
       overflow: hidden;
-      margin-left: 50px;
+      margin-left: 11.3%;
       img {
         width: 70%;
       }
